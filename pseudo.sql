@@ -1,4 +1,4 @@
-CREATE DATABASE pseudo;
+CREATE DATABASE exo_contacts CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 CREATE TABLE pays(
    iso_3 VARCHAR(3),
