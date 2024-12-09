@@ -33,3 +33,38 @@ CREATE TABLE telephone(
    PRIMARY KEY(id),
    FOREIGN KEY(id_1) REFERENCES contacts(id)
 );
+
+INSERT INTO pays (nom, iso_2, iso_3, nationalite) VALUES 
+('Afghanistan', 'AF', 'AFG', 'Afghane'),
+('Albanie', 'AL', 'ALB', 'Albanaise'),
+('Algérie', 'DZ', 'DZA', 'Algérienne'),
+('Angola', 'AO', 'AGO', 'Angolaise'),
+('Argentine', 'AR', 'ARG', 'Argentine'),
+('Arménie', 'AM', 'ARM', 'Arménienne'),
+('Australie', 'AU', 'AUS', 'Australienne'),
+('Autriche', 'AT', 'AUT', 'Autrichienne'),
+('Azerbaïdjan', 'AZ', 'AZE', 'Azerbaïdjanaise'),
+('Biélorussie', 'BY', 'BLR', 'Biélorusse'),
+('Belgique', 'BE', 'BEL', 'Belge'),
+('Bolivie', 'BO', 'BOL', 'Bolivienne'),
+('Bosnie-Herzégovine', 'BA', 'BIH', 'Bosniaque'),
+('Brésil', 'BR', 'BRA', 'Brésilienne'),
+('Bulgarie', 'BG', 'BGR', 'Bulgare'),
+('Cambodge', 'KH', 'KHM', 'Cambodgienne'),
+('Cameroun', 'CM', 'CMR', 'Camerounaise'),
+('Canada', 'CA', 'CAN', 'Canadienne'),
+('Chili', 'CL', 'CHL', 'Chilienne'),
+('Chine', 'CN', 'CHN', 'Chinoise'),
+('Colombie', 'CO', 'COL', 'Colombienne'),
+('Rébublique du Congo', 'CG', 'COG', 'Congolaise'),
+('Cuba', 'CU', 'CUB', 'Cubaine'),
+('Chypre', 'CY', 'CYP', 'Chypriote'),
+('République tchèque', 'CZ', 'CZE', 'Tchèque');
+
+INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, pays_iso_3) VALUES 
+('Descours', 'Bryan', '06/01/2005', 'Homme', '123 Rue Principale', '75001', 'Paris', 'FRA'),
+('Smith', 'John', '1990-08-20', 'Homme', '456 Main Street', '10001', 'New York', 'USA');
+
+INSERT INTO telephone (id_contact, numero, type) VALUES 
+(1, '+33123456789', 1),
+(2, '+12125550123', 2);
